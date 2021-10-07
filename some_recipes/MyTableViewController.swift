@@ -8,13 +8,37 @@
 import UIKit
 
 class MyTableViewController: UITableViewController {
-   
+    class recipe {
+        var name: String?
+        var timeToCook: String?
+        var img: String?
+        var details: String?
+        init(name: String, timeToCook: String, img: String, details: String) {
+            self.name = name
+            self.details = details
+            self.img = img
+            self.details = details
+        }
+    }
+    let recipe1 = recipe(name: "Pork with rice", timeToCook: "1h 15min", img: "avocado", details: "Products: 500g pork, 150g rice, 2 onions, 200g tomatoes. How to prepare: Heat the olive oil in a large pot over medium-high heat. Sauté the onion, carrot and celery for 2 to 3 minutes, until its soft and translucent. Add the garlic, chili flakes and Italian seasoning and sauté another minute.")
     
-    let data: [(recipe: String, details: String)] = [
+    let recipe2 = recipe(name: "Chicken soup", timeToCook: "45min", img: "avocadoto", details: "Products: 500g chicken, 150g potatoes, 2 onions, 200g tomatoes. How to prepare: Heat the olive oil in a large pot over medium-high heat. Sauté the onion, carrot and celery for 2 to 3 minutes, until its soft and translucent. Add the garlic, chili flakes and Italian seasoning and sauté another minute.")
+    
+    let recipe3 = recipe(name: "Chicken soup", timeToCook: "45min", img: "avocadoto", details: "Products: 500g chicken, 150g potatoes, 2 onions, 200g tomatoes. How to prepare: Heat the olive oil in a large pot over medium-high heat. Sauté the onion, carrot and celery for 2 to 3 minutes, until its soft and translucent. Add the garlic, chili flakes and Italian seasoning and sauté another minute.")
+    
+    let recipe4 = recipe(name: "Chicken soup", timeToCook: "45min", img: "avocadoto", details: "Products: 500g chicken, 150g potatoes, 2 onions, 200g tomatoes. How to prepare: Heat the olive oil in a large pot over medium-high heat. Sauté the onion, carrot and celery for 2 to 3 minutes, until its soft and translucent. Add the garlic, chili flakes and Italian seasoning and sauté another minute.")
+    
+    let recipe5 = recipe(name: "Pork goulash", timeToCook: "45min", img: "bonfile", details: "Products: 500g chicken, 150g potatoes, 2 onions, 200g tomatoes. How to prepare: Heat the olive oil in a large pot over medium-high heat. Sauté the onion, carrot and celery for 2 to 3 minutes, until its soft and translucent. Add the garlic, chili flakes and Italian seasoning and sauté another minute.")
+    
+    //let data = [recipe]()
+    //data.append(aRecipe: recipe)
+    
+    
+    let data: [(recipeName: String, timeToPrepare: String)] = [
     ("Stewed pork with mushrooms", "1h 15min"),
     ("Mushroom soup", "45min"),
     ("Simple cake", "1h 15min")
-    ]
+        ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +59,7 @@ class MyTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return self.data.count
+        return 5
     }
 
     
@@ -45,9 +69,9 @@ class MyTableViewController: UITableViewController {
                     return UITableViewCell()
                 }
         let cellData = self.data[indexPath.row]
-        cell.recipeName.text = cellData.recipe
-        cell.recipeDetail.text = cellData.details
-        cell.imageView?.image = UIImage(named: "avokado")
+        cell.recipeName.text = cellData.recipeName
+        cell.recipeDetail.text = cellData.timeToPrepare
+        cell.imageView?.image = UIImage(named: "recipe1.img")
 
         return cell
     }
