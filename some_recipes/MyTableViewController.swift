@@ -40,9 +40,14 @@ class MyTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "myRecipeCell", for: indexPath) as?
+                MyTableViewCell else 	{
+                    return UITableViewCell()
+                }
+        let cellData = self.data[indexPath.row]
+        cell.recipeName.text = cellData.recipe
+        cell.recipeDetail.text = cellData.details
+        cell.imageView?.image = UIImage(named: "avokado")
 
         return cell
     }

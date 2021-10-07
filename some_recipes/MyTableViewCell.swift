@@ -8,7 +8,11 @@
 import UIKit
 
 class MyTableViewCell: UITableViewCell {
-
+    @IBOutlet weak var recipePicture: UIImageView!
+    @IBOutlet weak var recipeName: UILabel!
+    @IBOutlet weak var recipeDetail: UILabel!
+    @IBOutlet weak var timeToCook: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

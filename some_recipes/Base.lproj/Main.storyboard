@@ -8,33 +8,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="some_recipes" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kwp-2m-wev">
-                                <rect key="frame" x="174" y="785" width="67" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                <connections>
-                                    <segue destination="EQa-Dq-g89" kind="show" id="ltS-wP-Zia"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="nEE-tf-tf9"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="20" y="83"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="Evr-Oe-qlz">
             <objects>
@@ -44,12 +17,12 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ZYA-uO-eXH"/>
+                        <segue destination="EQa-Dq-g89" kind="relationship" relationship="rootViewController" id="0BN-Oh-1ES"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2sc-jL-rbc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-832" y="82"/>
+            <point key="canvasLocation" x="38" y="82"/>
         </scene>
         <!--My Table View Controller-->
         <scene sceneID="R0K-Ft-JJx">
@@ -60,7 +33,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="121" id="0bG-Mf-d67" customClass="MyTableViewCell" customModule="some_recipes" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="myRecipeCell" rowHeight="121" id="0bG-Mf-d67" customClass="MyTableViewCell" customModule="some_recipes" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="121"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0bG-Mf-d67" id="shJ-ma-p6m">
@@ -114,6 +87,10 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="recipeDetail" destination="RtN-Nb-7IZ" id="5oK-6S-fZx"/>
+                                    <outlet property="recipeName" destination="e6t-Sd-7QJ" id="uxk-Uc-W44"/>
+                                    <outlet property="recipePicture" destination="TVH-qg-6jj" id="3c2-lA-YK9"/>
+                                    <outlet property="timeToCook" destination="3Vu-f6-WDG" id="alN-Fm-ZM3"/>
                                     <segue destination="FDu-Fd-Tfw" kind="show" id="SZg-w8-6TX"/>
                                 </connections>
                             </tableViewCell>
