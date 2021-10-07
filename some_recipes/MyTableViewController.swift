@@ -11,9 +11,9 @@ class MyTableViewController: UITableViewController {
    
     
     let data: [(recipe: String, details: String)] = [
-    ("Stewed pork with mushrooms", "How to cook"),
-    ("Mushroom soup", "How to prepare"),
-    ("Simple cake", "How to prepare")
+    ("Stewed pork with mushrooms", "1h 15min"),
+    ("Mushroom soup", "45min"),
+    ("Simple cake", "1h 15min")
     ]
 
     override func viewDidLoad() {
