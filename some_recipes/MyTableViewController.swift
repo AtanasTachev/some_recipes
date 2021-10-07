@@ -8,6 +8,7 @@
 import UIKit
 
 class MyTableViewController: UITableViewController {
+   
     
     let data: [(recipe: String, details: String)] = [
     ("Stewed pork with mushrooms", "How to cook"),
@@ -37,7 +38,7 @@ class MyTableViewController: UITableViewController {
         return self.data.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
@@ -45,7 +46,7 @@ class MyTableViewController: UITableViewController {
 
         return cell
     }
-    */
+    	
 
     /*
     // Override to support conditional editing of the table view.

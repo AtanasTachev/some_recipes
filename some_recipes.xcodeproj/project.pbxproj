@@ -14,6 +14,7 @@
 		7C68891A270F27C200BD13C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C688919270F27C200BD13C8 /* Assets.xcassets */; };
 		7C68891D270F27C200BD13C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C68891B270F27C200BD13C8 /* LaunchScreen.storyboard */; };
 		7C688927270F31BC00BD13C8 /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C688926270F31BC00BD13C8 /* MyTableViewController.swift */; };
+		7C688929270F6B0400BD13C8 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C688928270F6B0400BD13C8 /* MyTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		7C68891C270F27C200BD13C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C68891E270F27C200BD13C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C688926270F31BC00BD13C8 /* MyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
+		7C688928270F6B0400BD13C8 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +63,9 @@
 				7C688910270F27BB00BD13C8 /* AppDelegate.swift */,
 				7C688912270F27BB00BD13C8 /* SceneDelegate.swift */,
 				7C688914270F27BB00BD13C8 /* ViewController.swift */,
-				7C688916270F27BB00BD13C8 /* Main.storyboard */,
+				7C688928270F6B0400BD13C8 /* MyTableViewCell.swift */,
 				7C688926270F31BC00BD13C8 /* MyTableViewController.swift */,
+				7C688916270F27BB00BD13C8 /* Main.storyboard */,
 				7C688919270F27C200BD13C8 /* Assets.xcassets */,
 				7C68891B270F27C200BD13C8 /* LaunchScreen.storyboard */,
 				7C68891E270F27C200BD13C8 /* Info.plist */,
@@ -144,6 +147,7 @@
 				7C688915270F27BB00BD13C8 /* ViewController.swift in Sources */,
 				7C688911270F27BB00BD13C8 /* AppDelegate.swift in Sources */,
 				7C688913270F27BB00BD13C8 /* SceneDelegate.swift in Sources */,
+				7C688929270F6B0400BD13C8 /* MyTableViewCell.swift in Sources */,
 				7C688927270F31BC00BD13C8 /* MyTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
