@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C66513327141CA300D4F0C4 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C66513227141CA300D4F0C4 /* DetailsViewController.swift */; };
+		7C665135271471E800D4F0C4 /* zapecheniJajza.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7C665134271471E800D4F0C4 /* zapecheniJajza.jpg */; };
 		7C688911270F27BB00BD13C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C688910270F27BB00BD13C8 /* AppDelegate.swift */; };
 		7C688913270F27BB00BD13C8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C688912270F27BB00BD13C8 /* SceneDelegate.swift */; };
 		7C688915270F27BB00BD13C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C688914270F27BB00BD13C8 /* ViewController.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C66513227141CA300D4F0C4 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		7C665134271471E800D4F0C4 /* zapecheniJajza.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = zapecheniJajza.jpg; sourceTree = "<group>"; };
 		7C68890D270F27BB00BD13C8 /* some_recipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = some_recipes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C688910270F27BB00BD13C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C688912270F27BB00BD13C8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,10 +69,12 @@
 				7C688914270F27BB00BD13C8 /* ViewController.swift */,
 				7C688928270F6B0400BD13C8 /* MyTableViewCell.swift */,
 				7C688926270F31BC00BD13C8 /* MyTableViewController.swift */,
+				7C66513227141CA300D4F0C4 /* DetailsViewController.swift */,
 				7C688916270F27BB00BD13C8 /* Main.storyboard */,
 				7C688919270F27C200BD13C8 /* Assets.xcassets */,
 				7C68891B270F27C200BD13C8 /* LaunchScreen.storyboard */,
 				7C68891E270F27C200BD13C8 /* Info.plist */,
+				7C665134271471E800D4F0C4 /* zapecheniJajza.jpg */,
 			);
 			path = some_recipes;
 			sourceTree = "<group>";
@@ -131,6 +137,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C665135271471E800D4F0C4 /* zapecheniJajza.jpg in Resources */,
 				7C68891D270F27C200BD13C8 /* LaunchScreen.storyboard in Resources */,
 				7C68891A270F27C200BD13C8 /* Assets.xcassets in Resources */,
 				7C688918270F27BB00BD13C8 /* Main.storyboard in Resources */,
@@ -149,6 +156,7 @@
 				7C688913270F27BB00BD13C8 /* SceneDelegate.swift in Sources */,
 				7C688929270F6B0400BD13C8 /* MyTableViewCell.swift in Sources */,
 				7C688927270F31BC00BD13C8 /* MyTableViewController.swift in Sources */,
+				7C66513327141CA300D4F0C4 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
